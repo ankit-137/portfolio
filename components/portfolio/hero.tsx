@@ -31,9 +31,9 @@ export function Hero() {
 
             {/* Bio Text */}
             <p className="text-primary-foreground/80 max-w-md text-sm lg:text-base leading-relaxed mb-8">
-              I love building scalable backend systems and cloud infrastructure.
+              I love building scalable Frontend systems and exploring new technologies.
               I approach problems in a rational and pragmatic way and seek the simplest
-              and most functional solutions possible.
+              and most practical solutions possible.
             </p>
 
             {/* Decorative Star */}
@@ -63,12 +63,12 @@ export function Hero() {
                     <span>GH: /ankit-137</span>
                   </Link>
                   <Link 
-                    href="https://linkedin.com/in/ankitpatel" 
+                    href="https://www.linkedin.com/in/ankit-patel-10b1b434a" 
                     target="_blank"
                     className="flex items-center gap-2 hover:text-accent transition-colors"
                   >
                     <Linkedin className="w-4 h-4" />
-                    <span>LI: /ankitpatel</span>
+                    <span>LI: /Ankit Patel</span>
                   </Link>
                   <Link 
                     href="mailto:ankitpatel45820@gmail.com"

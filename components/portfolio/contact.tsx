@@ -79,7 +79,7 @@ export function Contact() {
                   <Github className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="https://linkedin.com/in/ankitpatel"
+                  href="https://www.linkedin.com/in/ankit-patel-10b1b434a"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center text-primary-foreground hover:text-accent-foreground transition-colors"

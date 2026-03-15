@@ -40,14 +40,14 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A responsive personal portfolio to showcase projects, skills, and professional profile with emphasis on UI clarity and accessibility.",
-    techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["Full Stack" ],
     features: [
       "Responsive design",
       "Project showcase",
       "Skills presentation",
       "Contact form",
     ],
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     github: "https://github.com/ankit-137",
     color: "bg-secondary",
   },

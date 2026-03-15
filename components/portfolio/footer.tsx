@@ -44,7 +44,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </Link>
             <Link
-              href="https://linkedin.com/in/ankitpatel"
+              href="https://www.linkedin.com/in/ankit-patel-10b1b434a"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-secondary hover:bg-primary flex items-center justify-center text-muted-foreground hover:text-primary-foreground transition-colors"

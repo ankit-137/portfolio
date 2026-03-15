@@ -3,19 +3,18 @@
 import { DecorativeStar } from "./decorative-star";
 
 const technicalSkills = {
-  languages: ["C", "C++", "Java", "JavaScript", "SQL", "HTML", "CSS"],
-  frameworks: ["Node.js", "Express.js", "React"],
-  tools: ["Git", "GitHub", "Docker", "Firebase", "Linux", "VS Code", "Postman"],
+  languages: ["JavaScript", "C++", "Java", "C","python", "SQL", "HTML", "CSS"],
+  frameworks: ["Node.js", "Express.js", "React","TensorFlow"],
+  tools: ["Git", "GitHub", "Docker", "Firebase", "VS Code", "Postman"],
   databases: ["MySQL", "MongoDB"],
 };
 
 const coreSkills = [
   "DSA",
   "OOP",
-  "DBMS",
-  "REST APIs",
-  "System Design",
-  "Authentication",
+  "JavaScript",
+  "React",
+  "AWS",
 ];
 
 const softSkills = [

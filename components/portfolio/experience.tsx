@@ -18,6 +18,12 @@ const experience = [
     subtitle: "University Level, CHARUSAT",
     description: "Led planning and management of inter-department sports schedules. Coordinated with faculty and students.",
   },
+  {
+    year: "2026",
+    title: "Technical Club Coordinator",
+    subtitle: "University Level, CHARUSAT",
+    description: "Led planning and management of inter-department club schedules. Coordinated with faculty and students.",
+  },
 ];
 
 const achievements = [
@@ -128,7 +134,7 @@ export function Experience() {
                 Hobbies & Interests
               </h2>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+              {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                 {[
                   { icon: "🎵", label: "Music" },
                   { icon: "🏏", label: "Cricket" },
@@ -140,7 +146,7 @@ export function Experience() {
                     <p className="text-sm text-muted-foreground">{hobby.label}</p>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* Languages Spoken */}

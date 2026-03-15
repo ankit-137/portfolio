@@ -21,19 +21,19 @@ export function About() {
 
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
               I am a B.Tech Computer Science student at CHARUSAT University
-              with a strong interest in backend development and cloud computing.
-              I am currently living in Gujarat, India and pursuing my degree
+              with a strong interest in Full Stack development,AI-ML and cloud computing.
+              I am currently living in Nadiad,Gujarat and pursuing my degree
               while building scalable systems and exploring cloud technologies.
             </p>
 
             {/* LinkedIn Button */}
             <Link
-              href="https://linkedin.com/in/ankitpatel"
+              href="https://www.linkedin.com/in/ankit-patel-10b1b434a"
               target="_blank"
               className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-6 py-3 rounded-full hover:bg-accent/90 transition-colors shadow-md"
             >
               <Linkedin className="w-4 h-4" />
-              <span className="text-sm font-medium">linkedin.com/in/ankitpatel</span>
+              <span className="text-sm font-medium">Ankit patel</span>
             </Link>
           </div>
 
@@ -48,13 +48,13 @@ export function About() {
               </div>
 
               {/* Floating Info Cards */}
-              <div className="absolute -left-4 lg:-left-8 top-1/4 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
-                B.Tech CSE 2028
-              </div>
+              {/* <div className="absolute -left-4 lg:-left-8 top-1/4 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+                B.Tech CE 2028
+              </div> */}
               
-              <div className="absolute -right-4 lg:-right-8 top-1/2 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              {/* <div className="absolute -right-4 lg:-right-8 top-1/2 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
                 Indian
-              </div>
+              </div> */}
 
               {/* Contact Card */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 bg-primary text-primary-foreground p-6 rounded-lg shadow-xl w-[90%] max-w-xs">
@@ -68,10 +68,7 @@ export function About() {
                     <Mail className="w-4 h-4 text-accent flex-shrink-0" />
                     <span className="truncate">ankitpatel45820@gmail.com</span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-accent flex-shrink-0" />
-                    <span>+91 XXXXXXXXXX</span>
-                  </div>
+                  
                 </div>
               </div>
             </div>

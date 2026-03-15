@@ -15,10 +15,37 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:ankitpatel45820@gmail.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${formData.email}`;
-    window.location.href = mailtoLink;
+    setStatus('loading');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: "", email: "", message: "" });
+        // Optional: you can show sonner/toast here
+        alert("Message sent successfully!");
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+      alert(error instanceof Error ? error.message : "Failed to send message. Please try again.");
+    } finally {
+      if (status !== 'error') {
+        setTimeout(() => setStatus('idle'), 3000);
+      }
+    }
   };
 
   return (
@@ -170,9 +197,21 @@ export function Contact() {
                   className="bg-secondary border-border resize-none"
                 />
               </div>
-              <Button type="submit" className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90">
-                <Send className="h-4 w-4" />
-                Send Message
+              <Button 
+                type="submit" 
+                disabled={status === 'loading' || status === 'success'}
+                className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
+              >
+                {status === 'loading' ? (
+                  "Sending..."
+                ) : status === 'success' ? (
+                  "Message Sent!"
+                ) : (
+                  <>
+                    <Send className="h-4 w-4" />
+                    Send Message
+                  </>
+                )}
               </Button>
             </form>
           </div>
